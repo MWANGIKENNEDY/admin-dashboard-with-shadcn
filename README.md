@@ -4,38 +4,55 @@ This is a modern admin dashboard built with [Next.js](https://nextjs.org) and [s
 
 ## Features
 
-- 📊 Interactive charts and data visualization
+- 📊 Interactive charts and data visualization (Bar, Area, Pie, Line charts)
+- 👥 User management system with detailed profiles
 - 🎨 Modern UI with dark/light theme support
-- 📱 Responsive design
+- 📱 Responsive design for all screen sizes
 - 🔧 Built with TypeScript and Tailwind CSS
 - 📋 Task management with calendar integration
+- 🏷️ User badges and role management
+- 📝 Form validation with Zod and React Hook Form
+- 🔍 Hover cards for detailed information display
+- 📈 Progress tracking and completion indicators
+- 🧭 Breadcrumb navigation for better UX
 
 ## shadcn/ui Components Used
 
 This project utilizes the following shadcn/ui components:
 
 ### Layout & Navigation
-- **Sidebar** - Collapsible sidebar with navigation menu
-- **Button** - Various button variants and sizes
+- **Sidebar** - Collapsible sidebar with navigation menu and nested items
+- **Button** - Various button variants (default, outline, ghost, destructive) and sizes
 - **Separator** - Visual dividers between content sections
+- **Breadcrumb** - Navigation breadcrumbs for page hierarchy
+- **Sheet** - Slide-out panels for forms and additional content
 
 ### Data Display
-- **Card** - Content containers with header, content, and footer
-- **Badge** - Status indicators and labels
-- **Avatar** - User profile images with fallbacks
-- **Chart** - Data visualization components (Bar, Area, Pie charts)
-- **Tooltip** - Interactive hover information
+- **Card** - Content containers with header, content, and footer sections
+- **Badge** - Status indicators and labels for roles and categories
+- **Avatar** - User profile images with fallback initials
+- **Chart** - Comprehensive data visualization (Bar, Area, Pie, Line charts)
+- **Tooltip** - Interactive hover information and help text
+- **HoverCard** - Rich hover content with detailed information
+- **Progress** - Progress bars for completion tracking
 
 ### Form & Input
-- **Calendar** - Date picker with navigation
-- **Checkbox** - Form checkboxes for task lists
-- **Popover** - Floating content containers
-- **Dropdown Menu** - Context menus and action lists
+- **Form** - Complete form system with validation and error handling
+- **Input** - Text input fields with various states
+- **Label** - Form field labels with proper accessibility
+- **Select** - Dropdown selection components with search
+- **Calendar** - Date picker with navigation and selection
+- **Checkbox** - Form checkboxes for task lists and selections
 
-### Utility
-- **Scroll Area** - Custom scrollable containers
+### Interactive Elements
+- **Popover** - Floating content containers for additional information
+- **Dropdown Menu** - Context menus and action lists with separators
 - **Collapsible** - Expandable/collapsible content sections
-- **Theme Provider** - Dark/light mode management
+
+### Utility & Layout
+- **Scroll Area** - Custom scrollable containers with styled scrollbars
+- **Skeleton** - Loading state placeholders matching content structure
+- **Theme Provider** - Dark/light mode management system
 
 ### Configuration
 - **Style**: New York
@@ -43,6 +60,7 @@ This project utilizes the following shadcn/ui components:
 - **Icon Library**: Lucide React
 - **CSS Variables**: Enabled
 - **TypeScript**: Full support
+- **Form Validation**: Zod integration with React Hook Form
 
 ## Getting Started
 
@@ -67,11 +85,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 - **Framework**: Next.js 16 with App Router
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
-- **UI Components**: shadcn/ui (New York style)
+- **UI Components**: shadcn/ui (New York style) - 22+ components
 - **Icons**: Lucide React
 - **Charts**: Recharts
 - **Theme**: next-themes for dark/light mode
-- **Date Handling**: date-fns
+- **Date Handling**: date-fns with react-day-picker
+- **Form Management**: React Hook Form with Zod validation
+- **State Management**: React hooks and context
+- **Animation**: CSS transitions and transforms
 
 ## Project Structure
 
@@ -79,12 +100,20 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ├── app/                    # Next.js app directory
 │   ├── globals.css        # Global styles and CSS variables
 │   ├── layout.tsx         # Root layout with providers
-│   └── page.tsx           # Dashboard home page
+│   ├── page.tsx           # Dashboard home page
+│   ├── not-found.tsx      # Custom 404 error page
+│   ├── error.tsx          # Error boundary page
+│   ├── global-error.tsx   # Global error handler
+│   ├── loading.tsx        # Loading state page
+│   └── users/             # User management pages
+│       ├── page.tsx       # Users listing page
+│       └── [username]/    # Dynamic user profile pages
 ├── components/            # React components
-│   ├── ui/               # shadcn/ui components
-│   ├── AppSidebar.tsx    # Navigation sidebar
-│   ├── Navbar.tsx        # Top navigation bar
-│   ├── *Chart.tsx        # Chart components
+│   ├── ui/               # shadcn/ui components (22+ components)
+│   ├── AppSidebar.tsx    # Navigation sidebar with collapsible menu
+│   ├── Navbar.tsx        # Top navigation bar with user menu
+│   ├── EditUser.tsx      # User editing form with validation
+│   ├── *Chart.tsx        # Chart components (Bar, Area, Pie, Line)
 │   └── ...               # Other custom components
 ├── hooks/                # Custom React hooks
 ├── lib/                  # Utility functions
