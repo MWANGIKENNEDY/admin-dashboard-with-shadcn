@@ -47,7 +47,7 @@ export default async function RootLayout({
 
             <AppSidebar />
 
-            <div className="flex-1">
+            <div className="flex-1 p-4">
 
               <Navbar></Navbar>
 
