@@ -1,4 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Admin Dashboard
+
+This is a modern admin dashboard built with [Next.js](https://nextjs.org) and [shadcn/ui](https://ui.shadcn.com) components.
+
+## Features
+
+- 📊 Interactive charts and data visualization
+- 🎨 Modern UI with dark/light theme support
+- 📱 Responsive design
+- 🔧 Built with TypeScript and Tailwind CSS
+- 📋 Task management with calendar integration
+
+## shadcn/ui Components Used
+
+This project utilizes the following shadcn/ui components:
+
+### Layout & Navigation
+- **Sidebar** - Collapsible sidebar with navigation menu
+- **Button** - Various button variants and sizes
+- **Separator** - Visual dividers between content sections
+
+### Data Display
+- **Card** - Content containers with header, content, and footer
+- **Badge** - Status indicators and labels
+- **Avatar** - User profile images with fallbacks
+- **Chart** - Data visualization components (Bar, Area, Pie charts)
+- **Tooltip** - Interactive hover information
+
+### Form & Input
+- **Calendar** - Date picker with navigation
+- **Checkbox** - Form checkboxes for task lists
+- **Popover** - Floating content containers
+- **Dropdown Menu** - Context menus and action lists
+
+### Utility
+- **Scroll Area** - Custom scrollable containers
+- **Collapsible** - Expandable/collapsible content sections
+- **Theme Provider** - Dark/light mode management
+
+### Configuration
+- **Style**: New York
+- **Base Color**: Neutral
+- **Icon Library**: Lucide React
+- **CSS Variables**: Enabled
+- **TypeScript**: Full support
 
 ## Getting Started
 
@@ -18,16 +62,43 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+
+- **Framework**: Next.js 16 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI Components**: shadcn/ui (New York style)
+- **Icons**: Lucide React
+- **Charts**: Recharts
+- **Theme**: next-themes for dark/light mode
+- **Date Handling**: date-fns
+
+## Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles and CSS variables
+│   ├── layout.tsx         # Root layout with providers
+│   └── page.tsx           # Dashboard home page
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   ├── AppSidebar.tsx    # Navigation sidebar
+│   ├── Navbar.tsx        # Top navigation bar
+│   ├── *Chart.tsx        # Chart components
+│   └── ...               # Other custom components
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+└── public/               # Static assets
+```
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
+- [shadcn/ui Documentation](https://ui.shadcn.com) - beautiful and accessible components
+- [Tailwind CSS](https://tailwindcss.com/docs) - utility-first CSS framework
+- [Recharts](https://recharts.org/) - composable charting library
 
 ## Deploy on Vercel
 

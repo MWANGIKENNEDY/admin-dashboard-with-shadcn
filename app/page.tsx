@@ -1,6 +1,8 @@
 import AppareaChart from "@/components/AppareaChart";
 import AppbarChart from "@/components/AppbarChart";
 import AppPieChart from "@/components/AppPieChart";
+import CardList from "@/components/CardList";
+import Todolist from "@/components/Todolist";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
 
 
       <div className="bg-primary-foreground p-4 rounded-lg">
-
+<CardList title="Popular Content"/>
 
       </div>
 
@@ -26,7 +28,7 @@ export default function Home() {
 
 
       <div className="bg-primary-foreground p-4 rounded-lg">
-
+<Todolist/>
 
       </div>
 
@@ -38,7 +40,7 @@ export default function Home() {
 
 
       <div className="bg-primary-foreground p-4 rounded-lg">
-
+<CardList title="Trending Items"/>
 
       </div>
 
