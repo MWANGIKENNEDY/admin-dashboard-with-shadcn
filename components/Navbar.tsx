@@ -30,7 +30,7 @@ const Navbar = () => {
             {/* <Button variant="outline" onClick={toggleSidebar}>Toggle Sidebar</Button> */}
             <div className="flex items-center gap-4">
 
-                <Link href="/">Dashboard</Link>
+                <Link href="/" className="font-medium hover:underline">Dashboard</Link>
                 <ModeToggle />
 
                 <DropdownMenu>

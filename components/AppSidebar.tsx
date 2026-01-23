@@ -13,6 +13,8 @@ import {
   Projector,
   Plus,
   ChevronDown,
+  CreditCard,
+  Users,
 } from "lucide-react";
 
 import {
@@ -36,13 +38,14 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 
 export const menuItems = [
-  { title: "Home", url: "/", icon: Home },
-  { title: "Inbox", url: "/inbox", icon: Inbox },
-  { title: "Calendar", url: "/calendar", icon: Calendar },
-  { title: "Search", url: "/search", icon: Search },
-  { title: "Notifications", url: "/notifications", icon: Bell },
-  { title: "Profile", url: "/profile", icon: User },
-  { title: "Settings", url: "/settings", icon: Settings },
+  { title: "Users", url: "/users", icon: Users },
+  { title: "Payments", url: "/payments", icon: CreditCard },
+  { title: "Home", url: "/coming-soon", icon: Home },
+  { title: "Calendar", url: "/coming-soon", icon: Calendar },
+  { title: "Search", url: "/coming-soon", icon: Search },
+  { title: "Notifications", url: "/coming-soon", icon: Bell },
+  { title: "Profile", url: "/coming-soon", icon: User },
+  { title: "Settings", url: "/coming-soon", icon: Settings },
 ];
 
 const projects = [
